@@ -6,8 +6,10 @@ import Parallax from "./components/scrollingComponents/Parallax";
 import SmoothScroll from "./components/scrollingComponents/SmootScroll";
 import Carousel from './components/Carousel';
 import Carousel2 from './components/Carousel2';
+import Footer from './components/footer';
 
 export default function Home() {
+    
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -31,6 +33,8 @@ export default function Home() {
             </main>
         );
     }
+
+ 
 
     return (
         <div>
@@ -83,10 +87,10 @@ export default function Home() {
                         </div>
                     </Parallax>
 
-                    <Parallax speed={0} classname='self-center'>
+                    <Parallax speed={-1} classname='self-center'>
                         <Carousel2 />
                     </Parallax>
-                    <Parallax speed={0} classname="self-end">
+                    <Parallax speed={-1} classname="self-end">
                         <div className="w-44 border-2 border-solid flex justify-center h-16 hover:scale-105 cursor-pointer duration-500 ">
                             <Link href="/allProjects" className="text-2xl font-light text-center text-[#fac08f] pt-4">
                                 WiewMore
@@ -94,12 +98,41 @@ export default function Home() {
                         </div>
                     </Parallax>
                 </section>
-
-                <Parallax id="parallax" speed={-1} classname="self-start">
-                    <div className=' self-start ml-20 ' >
+                <section className='mt-56 px-80' >
+                    <div className=' '>
                         <h2 className="text-[#ffffff] text-3xl font-medium pl-20 w-full mt-40">Education</h2>
+                        <div className='flex   flex-col mt-10 text-center '>
+                            <p className="text-[#ffffff] text-2xl font-light">Alas Academy</p>
+                            <p className="text-[#ffffff] text-2xl font-light">Frontend Developer</p>
+                            <p className="text-[#ffffff] text-2xl font-light">2023 - 2024</p>
+                        </div>
                     </div>
-                </Parallax>
+                </section>
+                <section className='mt-56 px-80 h-80' >
+                    <div>
+                        <h2 className="text-[#ffffff] text-3xl font-medium pl-20 w-full mt-40">Experience</h2>
+                        <div className='flex justify-evenly mt-10 px-20'>
+
+                        <div className='flex flex-col mt-10 text-center text-2xl '>
+                        <h3>Frontend Developer Intern</h3>
+                            <p className="text-[#ffffff] text-2xl font-light">Alas dev center</p>
+                            <p className="text-[#ffffff] text-2xl font-light">2022 - 2023</p>
+                        </div>
+                        <div className=' flex flex-col mt-10 text-center text-2xl '>
+                        <h3>Frontend Developer (Junior)</h3>
+                            <p className="text-[#ffffff] text-2xl font-light">Teftish.inc</p>
+                            <p className="text-[#ffffff] text-2xl font-light">2023 - present</p>
+                        </div>
+                       
+                        </div>
+
+                    </div>
+                    
+                </section>
+
+        <Footer />
+
+
             </SmoothScroll>
 
         </div>

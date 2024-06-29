@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@darkroom.engineering/hamo": "^0.6.41",
+    "@phosphor-icons/react": "^2.1.7",
     "gsap": "^3.12.5",
     "keen-slider": "^6.8.6",
     "lenis": "^1.0.45",
