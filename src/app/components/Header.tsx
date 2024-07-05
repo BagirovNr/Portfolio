@@ -1,4 +1,5 @@
 'use client'
+import { List, X } from '@phosphor-icons/react';
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -10,33 +11,42 @@ function Header() {
     }
 
     return (
-        <header className='pb-36 '>
+        <header className='pb-3 fixed w-full top-0 z-10 bg-black '>
             <nav>
-                <ul className=' w-full bg-black flex fixed  justify-between h-24 text-gray-200 pt-2 z-10 '>
-                    <div className='pl-28 pt-6'>
-                        <Link href='/' className='text-xl text-[#fac08f]'>Nadir Baghirov</Link>
-                    </div>
-                    
-                    <div className='pt-6 pr-10 md:hidden'>
-                        <button onClick={handleToggle} className='text-2xl text-[#c0c0c0]'>Menu</button>
-                    </div>
-                    
-                   {isOpen? (
-                        <div className='flex justify-between w-2/6 pr-10 text-2xl pt-6 text-[#c0c0c0]  '>
+                <ul className='z-10 flex justify-between'>
+                    <li className={'md:pl-20 pt-6 sm:pl-10' }>
+                        <Link href='/' className='text-xl text-[#fac08f] pl-2.5'>Nadir Baghirov</Link>
+                    </li>
+                    <li className='hidden md:flex justify-between w-2/6 pr-10 text-2xl pt-6 text-[#c0c0c0]   '>
                         <Link className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/'>Home</Link>
                         <Link className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/contact'>Contact</Link>
                         <Link className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/about'>About</Link>
-                    </div>
-                   ):(
-                    <div className='hidden md:flex justify-between w-2/6 pr-10 text-2xl pt-6 text-[#c0c0c0]  '>
-                        <Link className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/'>Home</Link>
-                        <Link className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/contact'>Contact</Link>
-                        <Link className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/about'>About</Link>
-                    </div>
-                   )}
-
-                    
+                    </li>
+                     <div className='pt-6 pr-4 md:hidden duration-300 transition-all'>
+                                 <button onClick={handleToggle} className='text-2xl text-[#c0c0c0]'><List size={32} /></button>
+                    </div>                    
                 </ul>
+                {isOpen && (
+                <nav className='fixed top-0 left-0 w-full h-full bg-black z-10 pt-3 '>
+                    <ul className='flex justify-between px-3 py-3 '>
+                    <li><Link href='/' className='text-xl text-[#fac08f]'>Nadir Baghirov</Link></li>
+                    <li><button onClick={handleToggle} className='text-2xl text-[#c0c0c0]'><X size={32} /></button></li>
+                    </ul>
+                    
+                <ul className='text-3xl flex flex-col  h-screen justify-evenly w-full text-center '>
+                         <li >
+                         <Link onClick={handleToggle} className='hover:text-[#fac08f] hover:scale-100 duration-500 ' href='/'>Home</Link>
+                         </li>
+                         <li>
+                         <Link onClick={handleToggle} className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/contact'>Contact</Link>
+                         </li>
+                         <li>
+                         <Link onClick={handleToggle} className='hover:text-[#fac08f] hover:scale-95 duration-500' href='/about'>About</Link>
+                         </li>
+                </ul>
+               
+                </nav>
+                    )}
             </nav>
         </header>
     )

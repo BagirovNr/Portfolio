@@ -22,8 +22,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${Gilda.className} bg-black text-white`}>
+                    <Header  />
                 <SmootScroll>
-                    <Header />
                     {children}
                 </SmootScroll>
             </body>
