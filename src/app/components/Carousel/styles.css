@@ -11,6 +11,19 @@
   padding-top: 20px;
 
 }
+@media screen and (max-width: 768px) {
+
+  .number-slide1,
+  .number-slide2,
+  .number-slide3,
+  .number-slide4,
+  .number-slide5,
+  .number-slide6 {
+    font-size: 50px;
+    height: 100px;
+  }
+  
+}
 
 .number-slide1,
 .number-slide2,

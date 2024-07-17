@@ -11,9 +11,9 @@ function SmootScroll({ children }: { children: React.ReactNode }) {
         setIsLoaded(true);
     }, []);
 
-    // if (!isLoaded) {
-    // return "asddassaddsaasds";
-    // }/
+    if (!isLoaded) {
+    return "asddassaddsaasds";
+    }
 
     return (
         <ReactLenis root options={{

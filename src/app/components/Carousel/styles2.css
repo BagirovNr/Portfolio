@@ -20,3 +20,14 @@
     height: 200px;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .scene {
+      perspective:300px ;
+      width: 160px;
+      height: 300px;
+    }
+    .carousel__cell{
+      width: 150px;
+    }
+  }

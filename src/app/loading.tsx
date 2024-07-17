@@ -1,5 +1,8 @@
-export default function Loading() {
-     return (
-         <h1>Loading</h1>
-     )
+// components/LoadingScreen.js
+export default function LoadingScreen() {
+    return (
+        <main className="bg-[#000000] h-screen flex items-center justify-center">
+            <p className="text-[#ffffff]">Loading...</p>
+        </main>
+    );
 }

@@ -36,22 +36,22 @@ export default function Carousel2() {
             <div className="scene">
                 <div className="carousel keen-slider" ref={sliderRef}>
                     <div className="carousel__cell number-slide11 cursor-grab active:cursor-grabbing">
-                        <img src="https://picsum.photos/600/700" alt="error" />
+                    <img src="https://picsum.photos/500/900" alt="error" />
                     </div>
                     <div className="carousel__cell number-slide22 cursor-grab active:cursor-grabbing">
-                        <img src="https://picsum.photos/500/700" alt="error" />
+                    <img src="https://picsum.photos/500/900" alt="error" />
                     </div>
                     <div className="carousel__cell number-slide33 cursor-grab active:cursor-grabbing">
-                        <img src="https://picsum.photos/400/600" alt="error" />
+                        <img src="https://picsum.photos/500/900" alt="error" />
                     </div>
                     <div className="carousel__cell number-slide44 cursor-grab active:cursor-grabbing">
-                        <img src="https://picsum.photos/600/600" alt="error" />
+                    <img src="https://picsum.photos/500/900" alt="error" />
                     </div>
                     <div className="carousel__cell number-slide55 cursor-grab active:cursor-grabbing">
-                        <img src="https://picsum.photos/400/700" alt="error" />
+                    <img src="https://picsum.photos/500/900" alt="error" />
                     </div>
                     <div className="carousel__cell number-slide66 cursor-grab active:cursor-grabbing">
-                        <img src="https://picsum.photos/500/600" alt="error" />
+                        <img src="https://picsum.photos/500/900" alt="error" />
                     </div>
                 </div>
             </div>
