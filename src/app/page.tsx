@@ -43,7 +43,7 @@ export default function Home() {
                 <section className='flex justify-evenly flex-wrap max-sm:flex-col max-sm:gap-10 max-sm:items-center'>
                     <Parallax speed={-2} classname="self-start max-sm:self-start max-sm:pl-2">
                         <div>
-                            <h2 className="text-[#ffffff] text-3xl font-medium pl-20 w-full mt-40 max-sm:pl-0 max-sm:h-20 max-sm:mt-20">Recent Work</h2>
+                            <h2 className="text-[#fac08f] text-3xl font-medium pl-20 w-full mt-40 max-sm:pl-0 max-sm:h-20 max-sm:mt-20">Recent Work</h2>
                         </div>
                     </Parallax>
                     <Parallax speed={-1} classname='self-center'>
@@ -60,7 +60,7 @@ export default function Home() {
 
                 <section className='mt-56 px-80 max-sm:px-0 max-sm:mt-10' >
                     <div className=''>
-                        <h2 className="text-[#ffffff] text-3xl font-medium pl-20 w-full mt-40 max-sm:mt-10 max-sm:pl-2">Education</h2>
+                        <h2 className="text-[#fac08f] text-3xl font-medium pl-20 w-full mt-40 max-sm:mt-10 max-sm:pl-2">Education</h2>
                         <div className='flex flex-col mt-10 text-center'>
                             <p className="text-[#ffffff] text-2xl font-light">Alas Academy</p>
                             <p className="text-[#ffffff] text-2xl font-light">Frontend Developer</p>
@@ -71,7 +71,7 @@ export default function Home() {
 
                 <section className='mt-56 px-80 h-80 max-sm:px-0 max-sm:mt-10' >
                     <div >
-                        <h2 className="text-[#ffffff] text-3xl font-medium pl-20 w-full mt-32 max-sm:pl-2">Experience</h2>
+                        <h2 className="text-[#fac08f] text-3xl font-medium pl-20 w-full mt-32 max-sm:pl-2">Experience</h2>
                         <div className='flex justify-evenly mt-10 px-20 max-sm:flex-col max-sm:px-0 gap-6 max-sm:mt-0'>
                         <div className='flex flex-col mt-10 text-center text-2xl '>
                         <h3 className='max-sm:text-xl'>Frontend Developer Intern</h3>

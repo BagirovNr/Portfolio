@@ -29,7 +29,7 @@ export default function IntroductionSection() {
                                 </div>
                             </div>
                         </Parallax>
-                        <Parallax id="parallax" speed={-3} classname="self-end w-1/3 max-sm:self-auto max-sm:w-4/5 max-sm:mt-2">
+                        <Parallax id="parallax" speed={-3} classname="self-end w-1/3 max-sm:self-auto max-sm:w-4/5 max-sm:mt-7">
                             <p className="text-[#ffffff] w-full h-full mt-96 max-sm:mt-16 text-xl font-light">
                                 With over 2 years of experience in frontend development, I create user-friendly websites and apps. Clients love my work because I focus on making things simple and effective.
                             </p>
