@@ -9,7 +9,6 @@ import LoadingScreen from './loading';
 import Carousel2 from './components/Carousel/Carousel2';
 import Carousel from './components/Carousel/Carousel';
 import Footer from './components/footer';
-import Header from './components/Header';
 export default function Home() {
     const [isLoaded, setIsLoaded] = useState(false);
 
@@ -33,7 +32,6 @@ export default function Home() {
 
     return (
         <div className='pt-40'>
-                    <Header  />
 
             <SmoothScroll>
                 <IntroductionSection />

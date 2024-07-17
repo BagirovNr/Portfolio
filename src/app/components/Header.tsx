@@ -17,7 +17,7 @@ function Header() {
     
 
     return (
-        <header className='pb-3 fixed w-full top-0 z-10 bg-black '>
+        <header className='pb-3 fixed w-full top-0 z-10 bg-black  '>
             <nav>
                 <ul className='z-10 flex justify-between'>
                     <li className={'md:pl-20 pt-6 sm:pl-10' }>
