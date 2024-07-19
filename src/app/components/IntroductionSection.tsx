@@ -13,7 +13,7 @@ export default function IntroductionSection() {
                     </div>
                 </Parallax>
                 <div>
-                    <div className="flex justify-between mt-40 max-sm:flex-col items-center max-sm:text-2xl max-sm:w-full">
+                    <div className="flex justify-between mt-40 max-sm:flex-col items-center max-sm:text-2xl max-sm:w-full max-sm:mt-10">
                         <Parallax id="parallax" speed={1} classname="self-start w-1/3 z-10 max-sm:self-auto max-sm:w-4/5">
                             <p className="text-card text-xl w-full font-light ml-2 z-50 ">
                                 Welcome to my portfolio. I am a frontend developer specializing in building dynamic and responsive web applications. My experience includes working with various frameworks and technologies to create user-friendly interfaces for websites, mobile apps, and interactive platforms.

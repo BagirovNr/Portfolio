@@ -80,3 +80,6 @@
 .text-card{
     color: var(--card);
 }
+.border-gold{
+    border-color: var(--gold);
+}

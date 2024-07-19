@@ -22,7 +22,7 @@ export default function Carousel() {
   })
   return (
     <section className="z-50">
-      <h1 className="text-5xl text-center tracking-[0.5rem] mb-3 max-sm:text-2xl text-[#fac08f] " >My Skills</h1>
+      {/* <h1 className="text-5xl text-center tracking-[0.5rem] mb-3 max-sm:text-2xl text-[#fac08f] " >My Skills</h1> */}
       <div ref={sliderRef} className="keen-slider">
 {/* 
         <div className="keen-slider__slide number-slide1">Language: HTML, CSS, JavaScript, Tailwind, SCSS, TypeScript, </div>

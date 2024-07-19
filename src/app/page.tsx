@@ -35,7 +35,7 @@ export default function Home() {
 
             <SmoothScroll>
                 <IntroductionSection />
-                <Parallax id="parallax" speed={-1} classname="self-center ">
+                <Parallax id="parallax" speed={-1} classname="self-center mt-5 ">
                     <Carousel />
                 </Parallax>
                 <section className='flex justify-evenly flex-wrap max-sm:flex-col max-sm:gap-10 max-sm:items-center'>

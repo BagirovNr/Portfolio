@@ -4,18 +4,17 @@ import Form from '../../components/form/form'
 
 function Contact() {
     return (
-        <main className='px-36 pt-28 flex flex-col gap-10'>
-            <h1 className='text-gold text-8xl'>DON’T BE SHY, <br />JUST <i>SAY HI!</i></h1>
+        <main className='px-36 pt-28 flex flex-col gap-10 max-sm:px-10'>
+            <h1 className='text-gold text-8xl max-sm:text-3xl'>DON’T BE SHY, <br />JUST <i>SAY HI!</i></h1>
 
 
-            <div className='flex justify-around gap-10 '>
+            <div className='flex justify-around gap-10 max-sm:flex-col '>
                 <div>
-        <Image src={'/3x4.jpg'} width={700} height={800} alt='Error' quality={100} className='rounded-3xl'/>
-
+        <Image src={'/3x4.jpg'} width={500} height={600} alt='Error' quality={100} className='rounded-3xl'/>
                 </div>
-
-                <div>
-                    <h2 className='text-gold text-5xl'>Get in Touch</h2>
+                <div className='flex flex-col gap-5 '>
+                    <h2 className='text-gold text-5xl max-sm:text-center max-sm:text-4xl'>Get in Touch</h2>
+                    <p className='text-3xl pb-2 max-sm:text-center max-sm:text-xl'>Feel free to email me at any time. I will respond within 24 hours.</p>
                 <Form/>
                 </div>
             </div>
