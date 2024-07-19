@@ -8,11 +8,6 @@ function Header() {
 
     const handleToggle = () => {
         setIsOpen(!isOpen)
-        if(isOpen) {
-
-        }
-        else {
-        }
     }
     
 
@@ -21,7 +16,7 @@ function Header() {
             <nav>
                 <ul className='z-10 flex justify-between'>
                     <li className={'md:pl-20 pt-6 sm:pl-10' }>
-                        <Link href='/' className='text-xl text-gold pl-2.5'>Nadir Baghirov</Link>
+                        <Link href='/' className='text-xl text-gold pl-2.5 hover:text-[#e6a56f] text-gold scale-95'>Nadir Baghirov</Link>
                     </li>
                     <li className='hidden md:flex justify-between w-2/6 pr-10 text-2xl pt-6 text-card '>
                         <Link className='hover:text-gold hover:scale-95 duration-500' href='/'>Home</Link>
@@ -35,7 +30,7 @@ function Header() {
                 {isOpen && (
                 <nav className='fixed top-0 left-0 w-full h-full bg-black z-10 pt-3  '>
                     <ul className='flex justify-between px-3 py-3 '>
-                    <li><Link href='/' className='text-xl text-gold'>Nadir Baghirov</Link></li>
+                    <li><Link href='/' className='text-xl text-gold hover:text-[#e6a56f]'>Nadir Baghirov</Link></li>
                     <li><button onClick={handleToggle} className='text-2xl text-card'><X size={32} /></button></li>
                     </ul>
                     

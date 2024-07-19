@@ -1,5 +1,5 @@
+'use client'
 import Link from 'next/link'
-import React from 'react'
 import {InstagramLogo,GithubLogo,LinkedinLogo} from "@phosphor-icons/react";
 
 function Footer() {

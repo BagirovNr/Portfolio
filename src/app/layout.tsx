@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Gilda_Display } from "next/font/google";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import "./globals.css";
 import SmootScroll from "./components/scrollingComponents/SmootScroll";
 
