@@ -5,8 +5,7 @@ import Footer from '../../components/footer/footer'
 
 function Contact() {    
     return (
-        <section>
-
+        <section className='flex flex-col gap-32'>
         <main className='px-36 pt-28 flex flex-col flex-wrap gap-10 max-sm:px-10  '>
             <h1 className='text-gold text-8xl max-sm:text-3xl'>DON’T BE SHY, <br />JUST <i>SAY HI!</i></h1>
 
