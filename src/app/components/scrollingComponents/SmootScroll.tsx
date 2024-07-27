@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-export * from 'lenis/react'
-import { ReactLenis } from 'lenis/react'
+import { ReactLenis } from '@studio-freight/react-lenis'
 
 function SmootScroll({ children }: { children: React.ReactNode }) {
     const [isLoaded, setIsLoaded] = useState(false);
