@@ -11,6 +11,7 @@ import SmoothScroll from "../../components/scrollingComponents/SmootScroll";
 import Link from 'next/link';
 import { Lock } from '@phosphor-icons/react';
 import { Tooltip } from 'react-tooltip';
+import Skills from '../../components/skills/skills';
 
 export default function HomePage() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -59,7 +60,6 @@ export default function HomePage() {
                         <Tooltip id="aboutlink" content="This feature will be added soon"  anchorSelect="#aboutlink" place="top" style={{ backgroundColor: '#e6a56f' }} />
                     </Parallax>
                 </section>
-
                 <section className='mt-56 px-80 max-sm:px-0 max-sm:mt-10'>
                     <div>
                         <h2 className="text-gold text-3xl font-medium pl-20 w-full mt-40 max-sm:mt-10 max-sm:pl-2">Education</h2>
@@ -70,7 +70,6 @@ export default function HomePage() {
                         </div>
                     </div>
                 </section>
-
                 <section className='mt-56 px-80 h-80 max-sm:px-0 max-sm:mt-10'>
                     <div>
                         <h2 className="text-gold text-3xl font-medium pl-20 w-full mt-32 max-sm:pl-2">Experience</h2>
@@ -88,6 +87,8 @@ export default function HomePage() {
                         </div>
                     </div>
                 </section>
+                <Skills/>
+
 
                 <Footer />
             </SmoothScroll>
