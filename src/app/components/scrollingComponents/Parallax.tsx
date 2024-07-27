@@ -10,14 +10,20 @@ type Props = {
     speed?: number;
     classname?: string;
     id?: string;
+    width?: number;
 }
+
+type WindowSize = {
+    width: number;
+    height: number;
+};
 
 const Parallax = ({ classname, children, speed = 1, id = 'parallax' }: Props) => {
     const trigger = useRef<HTMLDivElement>(null);
     const target = useRef<HTMLDivElement>(null);
     const timeLine = useRef<gsap.core.Timeline | null>(null);
 
-    const { width: windowWidth } = useWindowSize();
+    const { width: windowWidth } = useWindowSize() as WindowSize;
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -45,7 +51,7 @@ const Parallax = ({ classname, children, speed = 1, id = 'parallax' }: Props) =>
     }, [id, speed, windowWidth]);
 
     return (
-        <div className={classname}  ref={trigger}>
+        <div className={classname} ref={trigger}>
             <div ref={target}>
                 {children}
             </div>
