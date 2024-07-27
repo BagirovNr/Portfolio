@@ -127,7 +127,6 @@ const Form: React.FC = () => {
           {errors[field.name] && (
             <div className='flex gap-1 items-center'>
               <Info size={16} weight='fill' color='#F97066' />
-              <p className="text-[#F97066] text-sm leading-4 font-medium">{(errors[field.name] as any)?.message}</p>
             </div>
           )}
         </div>
