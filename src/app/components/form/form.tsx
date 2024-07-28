@@ -127,6 +127,7 @@ const Form: React.FC = () => {
           {errors[field.name] && (
             <div className='flex gap-1 items-center'>
               <Info size={16} weight='fill' color='#F97066' />
+              <p className='text-xs text-red-500'>{errors[field.name].message.toString()}</p>
             </div>
           )}
         </div>
