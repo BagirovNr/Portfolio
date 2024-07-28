@@ -41,7 +41,7 @@ export default function HomePage() {
                 <Parallax id="parallax" speed={-1} classname="self-center mt-5 ">
                     <Carousel />
                 </Parallax>
-                <section className='flex justify-evenly flex-wrap max-sm:flex-col max-sm:gap-10 max-sm:items-center'>
+                <section className='flex justify-evenly flex-wrap max-sm:flex-col max-sm:gap-10 max-sm:items-center mt-36'>
                     <Parallax speed={-2} classname="self-start max-sm:self-start max-sm:pl-2">
                         <div>
                             <h2 className="text-gold text-3xl font-medium pl-20 w-full mt-40 max-sm:pl-0 max-sm:h-20 max-sm:mt-20">Recent Work</h2>
